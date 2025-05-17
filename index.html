@@ -176,7 +176,7 @@
                            <div>
                               <h3 class="experience__profession">Web Developer</h3>
                               <span class="experience__date">05/24 - 08/24</span>
-                              <p class="experience__description">Selected for an internship at Pantech Prolabs India Pvt Ltd., a subsidiary of Pantech Group Companies. During this period, I worked on real-time projects, contributing to the team’s success and gaining hands-on experience in a professional environment. This role allowed me to apply my technical skills, collaborate with experienced professionals, and enhance my problem-solving abilities.</p>
+                              <p class="experience__description">Selected for an internship at Pantech Prolabs India Pvt Ltd., a subsidiary of Pantech Group Companies. During this period, I worked on real-time projects, contributing to the team's success and gaining hands-on experience in a professional environment. This role allowed me to apply my technical skills, collaborate with experienced professionals, and enhance my problem-solving abilities.</p>
                            </div>
                         
 
@@ -279,7 +279,7 @@
 
                   <h3 class="services__title">Responsive Web Design</h3>
                <p class="services__description">
-                  In today’s multi-device world, it’s crucial that your website looks and functions perfectly on all devices. I ensure your site is fully responsive, providing a seamless experience whether accessed on a desktop, tablet, or smartphone.
+                  In today's multi-device world, it's crucial that your website looks and functions perfectly on all devices. I ensure your site is fully responsive, providing a seamless experience whether accessed on a desktop, tablet, or smartphone.
                </p>
                </article>
 
@@ -288,7 +288,7 @@
 
                   <h3 class="services__title">Seo (Web Pages)</h3>
                <p class="services__description">
-                  A beautiful website is only effective if people can find it. I optimize your web pages for search engines, improving your site’s visibility and driving more organic traffic. This includes keyword research, on-page SEO, and performance enhancements.
+                  A beautiful website is only effective if people can find it. I optimize your web pages for search engines, improving your site's visibility and driving more organic traffic. This includes keyword research, on-page SEO, and performance enhancements.
                </p>
                </article>
 
@@ -300,20 +300,14 @@
                 <h2 class="section__title">CONTACT ME</h2>
 
                 <div class="contact__container grid">
-                  <form action="" class="contact__form grid" id="contact-form">
-                     <div class="contact__group grid">
-
-                        <input type="" name="" placeholder="Names" required class="contact__input">
-
-                        <input type="email" name="" placeholder="Email" required class="contact__input">
-                     </div>
-
-                     <textarea name="" placeholder="Message" required class="contact__input contact__area"></textarea>
-
-                     <button type="submit" class="button contact__button">Send Message</button>
-
-                     <p class="contact__message" id="contact-message"></p>
-                     
+                  <form name="contact" method="POST" data-netlify="true" class="contact__form grid" id="contact-form">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="contact__group grid">
+                      <input type="text" name="name" placeholder="Names" required class="contact__input">
+                      <input type="email" name="email" placeholder="Email" required class="contact__input">
+                    </div>
+                    <textarea name="message" placeholder="Message" required class="contact__input contact__area"></textarea>
+                    <button type="submit" class="button contact__button">Send Message</button>
                   </form>
 
                   <div class="contact__social grid">
